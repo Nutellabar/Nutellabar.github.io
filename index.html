@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with FoodHut landing page.">
+    <meta name="author" content="Devcrud">
+    <title>Nutella Bar</title>
+   
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+
+    <link rel="stylesheet" href="assets/vendors/animate/animate.css">
+
+    <!-- Bootstrap + FoodHut main styles -->
+	<link rel="stylesheet" href="assets/css/foodhut.css">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    
+    <!-- Navbar -->
+    <nav class="custom-navbar navbar navbar-expand-lg navbar-dark fixed-top" data-spy="affix" data-offset-top="10">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link english" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link arabic"  href="#home">الرئيسية</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link english" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link arabic" href="#about">من نحن</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link english" href="#blog">products<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link arabic" href="#blog">المعروضات<span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+            <a class="navbar-brand m-auto" href="#">
+                <img src="assets/imgs/logo.png" class="brand-img" alt="">
+                <span class="brand-txt english">Nutella Bar</span>
+            </a>
+            <ul class="navbar-nav">
+                <li><a id ="arabic_button" onclick="makeArabic()" class="nav-link scrollto english" href="#">عربي</a></li>
+
+                <li><a id ="english_button" onclick="makeArabic()" class="nav-link scrollto arabic" href="#">English</a></li>
+                
+                <li class="nav-item">
+                    <a class="nav-link english" href="#gallary">Gallary</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#footter" class="nav-link english the_contact_nav"><span>Contact Us</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link arabic" href="#gallary">المعرض</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#footter" class="nav-link arabic the_contact_nav">تواصل معنا</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- header -->
+    <header id="home" class="header">
+        <div class="overlay text-white text-center">
+            <h1 class="display-2 font-weight-bold my-3 english">Nutella Bar</h1>
+            <h1 class="display-2 font-weight-bold my-3 arabic">نوتيلا بار</h1>
+            <h2 class="display-4 mb-5 english">Always fresh &amp; Delightful</h2>
+            <h2 class="display-4 mb-5 arabic" dir = "rtl">دائما الأفضل</h2>
+            <a class="btn btn-lg btn-primary english" href="#gallary">View Our gallary</a>
+            <a class="btn btn-lg btn-primary arabic" href="#gallary">معرض الصور</a>
+        </div>
+    </header>
+
+    <!--  About Section  -->
+    <div id="about" class="container-fluid wow fadeIn" id="about"data-wow-duration="1.5s">
+        <div class="row">
+            <div class="col-lg-6 has-img-bg"></div>
+            <div class="col-lg-6">
+                <div class="row justify-content-center">
+                    <div class="col-sm-8 py-101 my-5 ">
+                        <h2 class="mb-4 english" dir = "ltr">About Us</h2>
+                        <div dir = "rtl">
+                            <h2 class="mb-4 arabic arabic_direction">من نحن</h2>
+                        </div>
+
+                        <div class = "english">
+                            <p>Nutella Bar is Khartoum's best foundation serving Nutella IceCream. It's owned, managed and maintained by a group of wonderful sudanese whose job and number one goal is to make you satisfied.<br> we offer you a variety of products covered in Nutella chocolate. and
+                            we don't just stop at that we offer a large collection of toppings that you can add to your IceCream to make it even better for example you can add Oreo, Kitkat, Twix, kinder bueno and much more. <br> This is beside our regular IceCream which you can also add topings to, you can even 
+                            add Biscuits "I mean..... Hell Yeah!" and we also sell Chocolate Bars <br> Our branches are spread all over the capital we are at Khartoum, Khartoum North, Omdurman and even kalakla so we are always close to you. <br> our employees are hand picked they are some of the best in the business in our country 
+                            they will treat you will and give you your order in the best shape it can ever be, because they always know that your hapiness is our hapiness.</p>
+                        </div>
+
+                        <div class = "arabic arabic_direction">
+                            <p>نوتيلا بار هو أفضل مؤسسة في الخرطوم تقدم آيسكريم النوتيلا. المحل مملوكة ومدار من قبل مجموعة من الشباب الرائعين و هدفهم الأول هو إرضاءكم<br> نقدم لكم مجموعة متنوعة من المنتجات مغطاة بشوكولاتة نوتيلا و
+                                نحن لا نتوقف عند هذا فقط ، فنحن نقدم مجموعة كبيرة من الإضافات التي يمكنك إضافتها إلى الآيسكريم الخاص بك لجعلها أفضل ، على سبيل المثال يمكنك إضافة أوريو و كيتكات و تويكس و كيندر بوينو وغير ذلك الكثير. <br> هذا بجانب الآيس كريم العادي الذي يمكنك أيضًا إضافة طبقة إليه ، حتى يمكنك إضافة البسكويت "أعني ..... وأخيرا !" ونقوم أيضًا ببيع ألواح الشوكولاتة 
+                                <br>تنتشر فروعنا في جميع أنحاء العاصمة فنحن في الخرطوم والخرطوم بحري وأمدرمان وحتى الكلاكلة لذلك نحن دائما قريبون منك <br> نختيار الموظفين بعناية فائقة فهم الأفضل في هذا المجال في بلدنا
+                                سوف يعاملونك وسوف يعطونك طلبك بأفضل شكل يمكن أن يكون على الإطلاق ، لأنهم يعرفون دائمًا أن سعادتك هي سعادتنا</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BLOG Section  -->
+    <div id="blog" class="container-fluid bg-dark text-light py-5 text-center wow fadeIn blog">
+        <h2 class="section-title py-100 english">Our Products</h2>
+        <h2 class="section-title py-100 arabic">منتجاتنا</h2>
+        <div class="row justify-content-center">
+            <div class="col-sm-7 col-md-4 mb-5">
+                <ul class="nav nav-pills nav-justified mb-3 english" id="pills-tab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#foods" role="tab" aria-controls="pills-home" aria-selected="true">Ice cream</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#juices" role="tab" aria-controls="pills-profile" aria-selected="false">Chocolate Bars</a>
+                    </li>
+                </ul>
+
+                <ul class="nav nav-pills nav-justified mb-3 arabic" id="pills-tab" role="tablist">
+
+                    <li class="nav-item arabic">
+                        <a class="nav-link active arabic" id="pills-home-tab" data-toggle="pill" href="#foods" role="tab" aria-controls="pills-home" aria-selected="true">البوظة</a>
+                    </li>
+                    
+                    <li class="nav-item arabic">
+                        <a class="nav-link arabic" id="pills-profile-tab" data-toggle="pill" href="#juices" role="tab" aria-controls="pills-profile" aria-selected="false">ألواح الشوكولاتة</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="foods" role="tabpanel" aria-labelledby="pills-home-tab">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card bg-transparent border my-3 my-md-0">
+                            <img src="assets/imgs/orio.jpg" class="rounded-0 card-img-top mg-responsive">
+                            <div class="card-body">
+                                <h1 class="text-center mb-4"><a href="#" class="badge badge-primary">700SDG</a></h1>
+                                <h4 class="pt20 pb20 english">Oreo IceCream</h4>
+
+                                <h4 class="pt20 pb20 arabic">آيسكريم أوريو</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card bg-transparent border my-3 my-md-0">
+                            <img src="assets/imgs/ice_cream.jpg" class="rounded-0 card-img-top mg-responsive">
+                            <div class="card-body">
+                                <h1 class="text-center mb-4"><a href="#" class="badge badge-primary">500SDG</a></h1>
+                                <h4 class="pt20 pb20 english">Vanila IceCream</h4>
+                                <h4 class="pt20 pb20 arabic">آيسكريم بالفنيلا</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card bg-transparent border my-3 my-md-0">
+                            <img src="assets/imgs/kitkat_iceCream.jpg" class="rounded-0 card-img-top mg-responsive">
+                            <div class="card-body">
+                                <h1 class="text-center mb-4"><a href="#" class="badge badge-primary">600SDG</a></h1>
+                                <h4 class="pt20 pb20 english">Kitkat IceCream</h4>
+                                <h4 class="pt20 pb20 arabic">آيسكريم كيتكات</h4>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="juices" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <div class="row">
+                    <div class="col-md-4 my-3 my-md-0">
+                        <div class="card bg-transparent border">
+                            <img src="assets/imgs/kitkat.png" class="rounded-0 card-img-top mg-responsive">
+                            <div class="card-body">
+                                <h1 class="text-center mb-4"><a href="#" class="badge badge-primary">400SDG</a></h1>
+                                <h4 class="pt20 pb20 english">Kitkat</h4>
+                                <h4 class="pt20 pb20 arabic">كيتكات</h4>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 my-3 my-md-0">
+                        <div class="card bg-transparent border">
+                            <img src="assets/imgs/Twix-50g.png" class="rounded-0 card-img-top mg-responsive">
+                            <div class="card-body">
+                                <h1 class="text-center mb-4"><a href="#" class="badge badge-primary">400SDG</a></h1>
+                                <h4 class="pt20 pb20 english">Twix</h4>
+                                <h4 class="pt20 pb20 arabic">تويكس</h4>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 my-3 my-md-0">
+                        <div class="card bg-transparent border">
+                            <img src="assets/imgs/oreo.webp" class="rounded-0 card-img-top mg-responsive">
+                            <div class="card-body">
+                                <h1 class="text-center mb-4"><a href="#" class="badge badge-primary">450SDG</a></h1>
+                                <h4 class="pt20 pb20 english">Oreo</h4>
+                                <h4 class="pt20 pb20 arabic">أوريو</h4>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- book a table Section  -->
+    <div class="container-fluid has-bg-overlay text-center text-light has-height-lg middle-items" id="book-table">
+        <div class="">
+            <h2 class="section-title mb-5 english">Where Ice Cream Gets Even Better</h2>
+            <h2 class="section-title mb-5 arabic">زي ما قلنا المسافة بتساوي صفر لمن نحب نطيب خاطر زبون</h2>
+        </div>
+    </div>
+
+    <!--  gallary Section  -->
+    <div id="gallary" class="text-center bg-dark text-light has-height-md middle-items wow fadeIn">
+        <h2 class="section-title english">Check our Food Gallary</h2>
+        <h2 class="section-title arabic"> معرض الصور</h2>
+
+    </div>
+    <div class="gallary row">
+        <div class="col-sm-6 col-lg-3 gallary-item wow fadeIn">
+            <img src="assets/imgs/2.jpg" class="gallary-img">
+        </div>
+        <div class="col-sm-6 col-lg-3 gallary-item wow fadeIn">
+            <img src="assets/imgs/1.jpg" class="gallary-img">
+        </div>
+        <div class="col-sm-6 col-lg-3 gallary-item wow fadeIn">
+            <img src="assets/imgs/10.jpg" class="gallary-img">
+        </div>
+        <div class="col-sm-6 col-lg-3 gallary-item wow fadeIn">
+            <img src="assets/imgs/4.jpg" class="gallary-img">
+        </div>
+        <div class="col-sm-6 col-lg-3 gallary-item wow fadeIn">
+            <img src="assets/imgs/6.jpg" class="gallary-img">
+        </div>
+        <div class="col-sm-6 col-lg-3 gallary-item wow fadeIn">
+            <img src="assets/imgs/7.jpg" class="gallary-img">
+        </div>
+        <div class="col-sm-6 col-lg-3 gallary-item wow fadeIn">
+            <img src="assets/imgs/5.jpg" class="gallary-img">
+        </div>
+        <div class="col-sm-6 col-lg-3 gallary-item wow fadeIn">
+            <img src="assets/imgs/8.jpg" class="gallary-img">
+        </div>
+        <div class="col-sm-6 col-lg-3 gallary-item wow fadeIn">
+            <img src="assets/imgs/9.jpg" class="gallary-img">
+        </div>
+        <div class="col-sm-6 col-lg-3 gallary-item wow fadeIn">
+            <img src="assets/imgs/3.jpg" class="gallary-img">
+        </div>
+        <div class="col-sm-6 col-lg-3 gallary-item wow fadeIn">
+            <img src="assets/imgs/11.jpg" class="gallary-img">
+        </div>
+        <div class="col-sm-6 col-lg-3 gallary-item wow fadeIn">
+            <img src="assets/imgs/12.jpg" class="gallary-img">
+        </div>
+    </div>
+
+    <!-- CONTACT Section  -->
+    <div id="contact" class="contact_ container-fluid bg-dark text-light wow fadeIn">
+        <div class="row">
+            <div class="col-md-6 px-0">
+                <iframe id="map" style="width: 100%; height: 100%; min-height: 400px" src="https://www.google.com/maps/d/u/0/embed?mid=134jOPfsZLq8uJDSA1Q5nlL-iwOxcFJg&ehbc=2E312F" width="640" height="480"></iframe>
+            </div>
+            <div class="col-md-6 px-5 has-height-lg middle-items findus">
+                <h3 class = "english">FIND US</h3>
+                <h3 class = "arabic arabic_direction">مواقعنا</h3>
+                <p class = "english">Our branches are spread all over the capital we are at Khartoum, Khartoum North, Omdurman and even kalakla so we are always close to you.</p>
+                <p class = "arabic arabic_direction">تنتشر فروعنا في جميع أنحاء العاصمة فنحن في الخرطوم والخرطوم بحري وأمدرمان وحتى الكالاكلة لذلك نحن دائما قريبون منك</p>
+                <div class="text-muted">
+                    <p class = "english"><span class="ti-location-pin pr-3"></span> Khartoum, Khartoum North, Omdurman, kalakla</p>
+                    <p class = "arabic"><span class="ti-location-pin pr-3"></span> الخرطوم ، الخرطوم بحري ، أم درمان ، الكالاكلة</p>
+                    <p><span class="ti-support pr-3"></span>0115777758</p>
+                    <p><span class="ti-email pr-3"></span>info@example.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- page footer  -->
+    <div id = "footter" class="container-fluid bg-dark text-light has-height-md middle-items text-center wow fadeIn">
+        <div class="row">
+            <div class="col-sm-4">
+                <h3 class = "english">EMAIL US</h3>
+                <h3 class = "arabic">الإيميل</h3>
+                <P class="text-muted">info@website.com</P>
+            </div>
+            <div class="col-sm-4">
+                <h3 class = "english">CALL US</h3>
+                <h3 class = "arabic">الهاتف</h3>
+                <P class="text-muted">khartoum: 0115777722</P>
+                <P class="text-muted">khartoum-north: 0928366699</P>
+                <P class="text-muted">kalakla: 0115977722</P>
+                <P class="text-muted">omdurman: 0111124788</P>
+            </div>
+            <div class="col-sm-4">
+                <h3 class = "english">FIND US</h3>
+                <h3 class = "arabic">المكان</h3>
+                <P class="text-muted">Khartoum, Khartoum North, Omdurman, kalakla</P>
+            </div>
+            <div class = "center the_media_links">
+                <a href = "https://www.instagram.com/nutellabar56/?hl=en"><img src="assets/imgs/insta.png" class = "social_insta"></a>
+                <a href = "https://web.facebook.com/nutellabar56"><img src="assets/imgs/facebook.png" class = "social_facebook"></a>
+                <a href = "https://twitter.com/nutellabar56"><img src="assets/imgs/twitter.png" class = "social_facebook"></a>
+            </div>
+        </div>
+    </div>
+    <!-- end of page footer -->
+
+	<!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- wow.js -->
+    <script src="assets/vendors/wow/wow.js"></script>
+    
+    <!-- google maps -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script>
+
+    <!-- FoodHut js -->
+    <script src="assets/js/foodhut.js"></script>
+
+</body>
+</html>
